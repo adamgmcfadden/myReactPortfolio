@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import ContactForm from "./components/Contact";
+import Nav from "./components/Navigation";
+// import ContactForm from "./components/Contact";
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
   return (
     <div>
-      <Header>
-        <Nav setContactSelected={setContactSelected}></Nav>
-      </Header>
-      <main>
+      <Nav></Nav>
+
+      {/* <main>
         <div>
           {!contactSelected ? (
             <>
@@ -19,7 +19,7 @@ function App() {
           )}
         </div>
       </main>
-      <Footer>Footer Here</Footer>
+      <Footer>Footer Here</Footer> */}
     </div>
   );
 }
