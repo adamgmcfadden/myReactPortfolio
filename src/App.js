@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./components/Navigation";
+import Footer from "./components/Footer";
 // import ContactForm from "./components/Contact";
 
 function App() {
@@ -8,18 +9,7 @@ function App() {
     <div>
       <Nav></Nav>
 
-      {/* <main>
-        <div>
-          {!contactSelected ? (
-            <>
-              <Project>Projects here</Project>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )}
-        </div>
-      </main>
-      <Footer>Footer Here</Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
