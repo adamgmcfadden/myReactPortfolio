@@ -1,13 +1,13 @@
+/* ----------------------------
+---  GLOBAL STYLING BEGINS  ---
+---------------------------- */
+/*  color variables saved*/
 :root {
   --primary: #89b0ae;
   --secondary: #ffd6ba;
   --tertiary: #bee3db;
   --light: #faf9f9;
   --dark: #555b6e;
-
-  --spacing-one: calc(1rem * 0.5);
-  --spacing-two: calc(1rem);
-  --spacing-five: calc(2.5rem);
 }
 
 * {
@@ -21,6 +21,7 @@ body {
   min-height: 100%;
 }
 
+/* global styling from padding to colors and font size, weight and family */
 body {
   margin: 0;
   padding: 0;
@@ -30,9 +31,15 @@ body {
   letter-spacing: 0.1em;
   background: var(--light);
   color: var(--primary);
-  font-family: "Poiret One", cursive;
+  font-family: "Poiret One", cursive; /*replace with new custom*/
 }
+/* -------------------------------
+------  GLOBAL STYLING END -------
+------------------------------- */
 
+/* -------------------------------
+-----  HEADER STYLING BEGINS -----
+------------------------------- */
 header {
   background: var(--dark);
   height: 100px;
@@ -61,6 +68,43 @@ nav a:hover {
   color: var(--tertiary);
 }
 
+/* -------------------------------
+------  HEADER STYLING ENDS ------
+------------------------------- */
+
+/* -------------------------------
+----  ABOUT ME STYLING BEGINS ----
+------------------------------ */
+/* parent element (container) syling */
+.container-style {
+  margin: 20px 30px;
+}
+
+/* about-me subtitle -- make this global after*/
+.about-subtitle {
+  color: var(--dark);
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* paragraph styling */
+.para-style {
+  margin-left: 30px;
+}
+/* -------------------------------
+-----  ABOUT ME STYLING ENDS -----
+------------------------------- */
+
+/* -------------------------------
+-----  FOOTER STYLING BEGINS -----
+------------------------------- */
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .icon-cont {
   list-style: none;
 }
@@ -75,10 +119,10 @@ nav a:hover {
   margin: auto 20px;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-}
+/* -------------------------------
+------  FOOTER STYLING ENDS ------
+------------------------------- */
+
 /*  
 input {
   font-size: 1rem;

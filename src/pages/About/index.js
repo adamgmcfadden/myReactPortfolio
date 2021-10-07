@@ -3,16 +3,17 @@ import coverImage from "../../assets/cover/cover-image.jpg";
 
 function About() {
   return (
-    <section className="my-5">
-      <h1 id="about">Who am I?</h1>
-      <img
-        src={coverImage}
-        className="my-2"
-        style={{ width: "20%" }}
-        alt="cover"
-      />
-      <div className="my-2">
-        <p>
+    <section className="container-style">
+      <h1 className="about-subtitle">About me</h1>
+      <div className="d-flex flex-row">
+        <img
+          src={coverImage}
+          className="profile-img-style"
+          style={{ width: "20%" }}
+          alt="cover"
+        />
+
+        <p className="para-style">
           A highly motivated and bilingual professional entering a second career
           in Web Development and looking for an opportunity in the Ottawa tech
           market. In my last career in Mining Engineering, I specialized in
