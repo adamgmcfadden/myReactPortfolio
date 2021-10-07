@@ -61,6 +61,24 @@ nav a:hover {
   color: var(--tertiary);
 }
 
+.icon-cont {
+  list-style: none;
+}
+
+.icon-style {
+  color: var(--dark);
+  margin: auto 20px;
+}
+
+.icon-style:hover {
+  color: var(--primary);
+  margin: auto 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
 /*  
 input {
   font-size: 1rem;
