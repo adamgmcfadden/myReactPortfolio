@@ -25,13 +25,12 @@ function Header() {
   return (
     <div>
       <div>
-        <header className="flex-row px-1">
-          <h1> Adam Girard-McFadden</h1>
+        <header>
           <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         </header>
       </div>
       {renderPage(currentPage)}
     </div>
   );
-
+}
 export default Header;

@@ -9,16 +9,17 @@ function Nav(props) {
   });
 
   return (
-    <header className="flex-row px-1">
-      <nav>
-        <ul className="  flex-row">
+    <header className="d-flex flex-row">
+      <h1> Adam Girard-McFadden</h1>
+      <nav className="col-8 nav-cont">
+        <ul className="d-flex flex-row justify-content-between nav-ul">
           {tabs.map((tab) => (
-            <li className="mx-2" key={tab}>
+            <li className="nav-li" key={tab}>
               <a
                 href={"#" + tab.toLowerCase()}
                 onClick={() => props.handlePageChange(tab)}
                 className={
-                  props.currentPage === tab ? "nav-link-active" : "nav-link"
+                  props.currentPage === tab ? "nav-tab-active" : "nav-tab"
                 }
               >
                 {tab}
