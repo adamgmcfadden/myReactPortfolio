@@ -1,23 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
+function Nav(props) {
+  const tabs = ["About", "Portfolio", "Contact", "Resume"];
+
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(props.currentPage);
+  });
+
   return (
     <header className="flex-row px-1">
-      <h2>Adam Girard-McFadden</h2>
       <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about">About me</a>
-          </li>
-          <li className="mx-2">
-            <a href="#portfolio">Porfolio</a>
-          </li>
-          <li className="mx-2">
-            <a href="#contact">Contact</a>
-          </li>
-          <li className="mx-2">
-            <a href="#resume">Resume</a>
-          </li>
+        <ul className="  flex-row">
+          {tabs.map((tab) => (
+            <li className="mx-2" key={tab}>
+              <a
+                href={"#" + tab.toLowerCase()}
+                onClick={() => props.handlePageChange(tab)}
+                className={
+                  props.currentPage === tab ? "nav-link-active" : "nav-link"
+                }
+              >
+                {tab}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
