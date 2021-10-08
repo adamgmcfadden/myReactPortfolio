@@ -5,7 +5,7 @@ function About() {
   return (
     <section className="container-style">
       <h1 className="page-title">About me</h1>
-      <div className="d-flex flex-row">
+      <div className="d-flex flex-row main-cont-background">
         <img
           src={coverImage}
           className="profile-img-style"

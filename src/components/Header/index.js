@@ -4,6 +4,7 @@ import Portfolio from "../../pages/Portfolio";
 import About from "../../pages/About";
 import Resume from "../../pages/Resume";
 import ContactForm from "../../pages/Contact";
+import Footer from "../Footer";
 
 function Header() {
   const [currentPage, handlePageChange] = useState("About");

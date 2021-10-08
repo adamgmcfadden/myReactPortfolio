@@ -42,8 +42,12 @@ function ContactForm() {
       <h1 data-testid="h1tag" className="page-title">
         Contact me
       </h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div className="d-flex flex-column">
+      <form
+        id="contact-form"
+        onSubmit={handleSubmit}
+        className="main-cont-background"
+      >
+        <div className="d-flex flex-column ">
           <label htmlFor="name">Name:</label>
           <input
             type="text"

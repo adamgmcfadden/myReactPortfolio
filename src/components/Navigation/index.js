@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Footer from "../Footer";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
