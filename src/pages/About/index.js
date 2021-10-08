@@ -5,12 +5,11 @@ function About() {
   return (
     <section className="container-style">
       <h1 className="page-title">About me</h1>
-      <div className="d-flex flex-row main-cont-background">
+      <div className="main-cont-background d-flex flex-column">
         <img
           src={coverImage}
           className="profile-img-style"
-          style={{ width: "20%" }}
-          alt="cover"
+          alt="picture of Adam Girard-McFadden and his son"
         />
 
         <p className="para-style">

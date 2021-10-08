@@ -123,11 +123,20 @@ nav a:hover {
 
 /* paragraph styling */
 .para-style {
-  margin-left: 30px;
+  margin-top: 10px;
+  text-align: center;
   color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2;
 }
+
+.profile-img-style {
+  margin: 0 auto;
+  width: 300px;
+  max-height: 400px;
+  border-radius: 20px;
+}
+
 /* -------------------------------
 -----  ABOUT ME STYLING ENDS -----
 ------------------------------- */
@@ -323,3 +332,7 @@ footer {
 /* -------------------------------
 ------  FOOTER STYLING ENDS ------
 ------------------------------- */
+
+/*--------------------------
+MEDIA QUERIES SECTION STARTS
+--------------------------*/

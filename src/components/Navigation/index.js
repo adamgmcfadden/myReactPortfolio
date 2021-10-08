@@ -12,7 +12,7 @@ function Nav(props) {
   return (
     <header className="d-flex flex-row">
       <h1> Adam Girard-McFadden</h1>
-      <nav className="col-8 nav-cont">
+      <nav className="col-8 nav-cont ">
         <ul className="d-flex flex-row justify-content-between nav-ul">
           {tabs.map((tab) => (
             <li className="nav-li" key={tab}>
