@@ -38,10 +38,12 @@ function ContactForm() {
   }
 
   return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+    <section className="container-style">
+      <h1 data-testid="h1tag" className="page-title">
+        Contact me
+      </h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div className="d-flex flex-column">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -50,7 +52,7 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className="d-flex flex-column">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
@@ -59,7 +61,7 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className="d-flex flex-column">
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"

@@ -30,8 +30,20 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   background: var(--light);
-  color: var(--primary);
   font-family: "Poiret One", cursive; /*replace with new custom*/
+}
+
+/* main parent element (container) styling */
+.container-style {
+  margin: 20px 30px;
+}
+
+/* page title*/
+.page-title {
+  color: var(--dark);
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
 }
 /* -------------------------------
 ------  GLOBAL STYLING END -------
@@ -47,6 +59,7 @@ header {
 
 header h1 {
   margin: auto auto auto 30px;
+  color: var(--primary);
 }
 
 .nav-cont {
@@ -75,25 +88,76 @@ nav a:hover {
 /* -------------------------------
 ----  ABOUT ME STYLING BEGINS ----
 ------------------------------ */
-/* parent element (container) syling */
-.container-style {
-  margin: 20px 30px;
-}
-
-/* about-me subtitle -- make this global after*/
-.about-subtitle {
-  color: var(--dark);
-  margin-bottom: 20px;
-  font-size: 32px;
-  font-weight: bold;
-}
 
 /* paragraph styling */
 .para-style {
   margin-left: 30px;
+  color: var(--dark);
 }
 /* -------------------------------
 -----  ABOUT ME STYLING ENDS -----
+------------------------------- */
+
+/* -------------------------------
+-----  CONTACT STYLING BEGINS ----
+------------------------------- */
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  width: 600px;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+textarea {
+  margin-bottom: 20px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid var(--dark);
+  width: 600px;
+  height: 120px;
+  font-size: 18px;
+  color: var(--dark);
+}
+
+textarea:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+.error-text {
+  color: var(--dark);
+}
+
+button {
+  width: 90px;
+  border-radius: 8px;
+  background-color: var(--dark);
+  color: var(--secondary);
+}
+
+button:hover {
+  background-color: var(--primary);
+}
+button:focus {
+  color: var(--primary);
+}
+
+/* -------------------------------
+-----  CONTACT STYLING ENDS  -----
 ------------------------------- */
 
 /* -------------------------------
@@ -122,24 +186,3 @@ footer {
 /* -------------------------------
 ------  FOOTER STYLING ENDS ------
 ------------------------------- */
-
-/*  
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
-}
-textarea {
-  width: 600px;
-  height: 120px;
-  border: 3px solid #cccccc;
-  padding: 5px;
-} */

@@ -4,7 +4,7 @@ import coverImage from "../../assets/cover/cover-image.jpg";
 function About() {
   return (
     <section className="container-style">
-      <h1 className="about-subtitle">About me</h1>
+      <h1 className="page-title">About me</h1>
       <div className="d-flex flex-row">
         <img
           src={coverImage}
