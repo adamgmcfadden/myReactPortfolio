@@ -163,7 +163,40 @@ button:focus {
 /* -------------------------------
 ----- RESUME STYLING BEGINS  -----
 ------------------------------- */
+.body-container {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
+.section-title {
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.resume-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  color: var(--tertiary);
+}
+
+.resume-link:focus {
+  color: rgb(117, 8, 8);
+}
+
+.list-style {
+  margin-top: 15px;
+  margin-left: 10px;
+  list-style: circle;
+  color: var(--dark);
+}
+
+.list-item-style {
+  margin-bottom: 5px;
+}
 /* -------------------------------
 ----- RESUME STYLING ENDS  -------
 ------------------------------- */

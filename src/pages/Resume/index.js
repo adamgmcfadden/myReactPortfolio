@@ -1,4 +1,5 @@
 import React from "react";
+import Pdf from "../../assets/resume/Resume.pdf";
 
 function Resume() {
   const frontend = [
@@ -22,29 +23,33 @@ function Resume() {
   ];
   return (
     <div className="container-style">
-      <h1 className="page-title">Resume</h1>
-      <h3>
+      <h1 className="page-title mb-5">Resume</h1>
+      <h3 className="mb-4">
         Download my&nbsp;
-        <a className="resume-link" href="#resumelink">
-          Resume
+        <a className="resume-link" href={Pdf} target="_blank">
+          resume
         </a>
       </h3>
-      <h2>
-        Front-end Proficiencies
-        <ul>
+      <div className="body-container">
+        <h2 className="section-title">Front-end Proficiencies </h2>
+        <ul className="list-style">
           {frontend.map((tech) => (
-            <li key={tech}>{tech}</li>
+            <li className="list-item-style" key={tech}>
+              {tech}
+            </li>
           ))}
         </ul>
-      </h2>
-      <h2>
-        Back-end Proficiencies
-        <ul>
+      </div>
+      <div className="body-container">
+        <h2 className="section-title">Back-end Proficiencies</h2>
+        <ul className="list-style">
           {backend.map((tech) => (
-            <li key={tech}>{tech}</li>
+            <li className="list-item-style" key={tech}>
+              {tech}
+            </li>
           ))}
         </ul>
-      </h2>
+      </div>
     </div>
   );
 }
