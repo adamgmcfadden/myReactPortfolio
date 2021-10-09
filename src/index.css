@@ -53,7 +53,7 @@ body {
 
 /*  container styling  - around main content*/
 .main-cont-background {
-  background-color: rgba(255, 214, 186, 0.2);
+  background-color: rgba(190, 227, 219, 0.2);
   padding: 10px;
   margin-bottom: 60px;
 }
@@ -80,7 +80,8 @@ body {
 ------------------------------- */
 /* header styling */
 header {
-  background: var(--dark);
+  background-color: var(--dark);
+  background-image: linear-gradient(135deg, var(--light) 0%, var(--dark) 90%);
   height: 100px;
 }
 
@@ -143,7 +144,6 @@ nav a:hover {
 /* paragraph styling */
 .para-style {
   margin-top: 10px;
-
   text-align: center;
   color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
@@ -343,7 +343,10 @@ button:focus {
 /* footer styling */
 footer {
   position: fixed;
+  padding-top: 10px;
   bottom: 0;
+  width: 100%;
+  background-color: var(--light);
 }
 
 /* icon container styling */
@@ -370,3 +373,25 @@ footer {
 /*--------------------------
 MEDIA QUERIES SECTION STARTS
 --------------------------*/
+/* odd ball size was to fix a weird thing shrinking did to my name */
+@media screen and (max-width: 1800px) {
+  header {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /* header title repositioning */
+  header h1 {
+    margin: auto;
+  }
+
+  /*nav repositioning and sizing*/
+  .nav-cont {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*nav buttons repositioning*/
+  .nav-ul {
+    margin-right: 30px;
+  }
+}
