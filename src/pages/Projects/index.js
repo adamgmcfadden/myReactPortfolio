@@ -1,9 +1,12 @@
+// import react and useState + react icons
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 
 const ProjectList = ({ category }) => {
+  // set state at current project
   const [currentProject, setCurrentProject] = useState();
 
+  // array of project objects
   const [projects] = useState([
     {
       name: "Space Camp",
@@ -47,24 +50,29 @@ const ProjectList = ({ category }) => {
     <div className="container-style">
       <h1 className="page-title">Portfolio</h1>
       <div className="flex-images main-cont-background">
-        {projects.map((image, i) => (
-          <div className="project-container" key={image.name}>
+        {/* map through projects */}
+        {projects.map((project, i) => (
+          <div className="project-container" key={project.name}>
             <img
+              // require image saved in assets - in numbered order
               src={require(`../../assets/small/${i}.jpg`).default}
-              alt={image.name}
+              alt={project.name}
               className="project img-thumbnail "
-              key={image.name}
+              key={project.name}
             />
             <div className="project-text-cont">
-              <a className="link-style" href={image.link} target="_blank">
+              {/* link to deployed website - target blank for new page*/}
+              <a className="link-style" href={project.link} target="_blank">
                 {" "}
-                <span className="project-title-style">{image.name}</span>
+                <span className="project-title-style">{project.name}</span>
               </a>
-              <a className="link-style" href={image.gitLink} target="_blank">
+              {/* link to github page - target blank for new page*/}
+              <a className="link-style" href={project.gitLink} target="_blank">
                 {" "}
+                {/* import github icon */}
                 <FaGithub className="github-link-style" size="3em" />{" "}
               </a>
-              <h3 className="project-desc-style">{image.description}</h3>
+              <h3 className="project-desc-style">{project.description}</h3>
             </div>
           </div>
         ))}
@@ -73,4 +81,5 @@ const ProjectList = ({ category }) => {
   );
 };
 
+// export project list function
 export default ProjectList;
