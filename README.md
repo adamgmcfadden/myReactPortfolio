@@ -33,7 +33,7 @@ A very simple app to use. Click on the website link above. Navigate from page to
 
 #### Screenshot
 
-![About me](https://user-images.githubusercontent.com/83710803/136636303-97f6adfa-a0b4-4942-8a63-e891544274d7.png)
+![About me](https://user-images.githubusercontent.com/83710803/136636480-6449671c-4cf2-4279-b6a0-846bb80ee66f.png)
 
 ![Portfolio](https://user-images.githubusercontent.com/83710803/136636301-81696add-10f5-4ee3-84d2-dc7e960a34c9.png)
 
