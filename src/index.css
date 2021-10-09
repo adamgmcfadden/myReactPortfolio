@@ -54,6 +54,7 @@ body {
 .main-cont-background {
   background-color: rgba(255, 214, 186, 0.2);
   padding: 10px;
+  margin-bottom: 60px;
 }
 
 .link-style {
@@ -124,6 +125,7 @@ nav a:hover {
 /* paragraph styling */
 .para-style {
   margin-top: 10px;
+
   text-align: center;
   color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
