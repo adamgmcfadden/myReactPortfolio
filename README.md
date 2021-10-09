@@ -42,7 +42,7 @@ A very simple app to use. Click on the website link above. Navigate from page to
 ![Resume](https://user-images.githubusercontent.com/83710803/136636302-2d592211-c992-4d93-82cd-1766a2be66e0.png)
 
 ## Credits
-Project idea, and mock-up provided by Carleton University. All other code provided by Adam Girard-McFadden
+Project idea, and mock-up provided by Carleton University. Helpers.js and Contact page mostly copied from Carleton University Coding Bootcamp - Chapter 20 - React module project. All other code provided by Adam Girard-McFadden
 
 ## Licenses
 
