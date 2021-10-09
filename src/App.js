@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+// import dependencies - react, header and footer
+import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -11,4 +12,5 @@ function App() {
   );
 }
 
+// export app to public html page
 export default App;

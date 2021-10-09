@@ -1,3 +1,4 @@
+// import dependencies -- react and cover/profile image
 import React from "react";
 import coverImage from "../../assets/cover/cover-image.jpg";
 
@@ -7,6 +8,7 @@ function About() {
       <h1 className="page-title">About me</h1>
       <div className="main-cont-background d-flex flex-column">
         <img
+          // src is imported cover image
           src={coverImage}
           className="profile-img-style"
           alt="picture of Adam Girard-McFadden and his son"
@@ -30,4 +32,5 @@ function About() {
   );
 }
 
+// export about function
 export default About;
