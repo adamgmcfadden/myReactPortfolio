@@ -57,6 +57,7 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
+          setErrorMessage("Email sent successfully!");
         },
         (error) => {
           console.log(error.text);
@@ -112,7 +113,6 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        {/* button ready to be used once some back end is added to form submit */}
         <button data-testid="buttontag" type="submit">
           Submit
         </button>
